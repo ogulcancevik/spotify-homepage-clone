@@ -1,0 +1,177 @@
+@media screen and (max-width: 1023px) {
+    .navbar {
+        height: 54px;
+        justify-content: flex-end;
+
+        .navbar-logo {
+            position: absolute;
+            left: 30px;
+            img {
+                width: 100px;
+            }
+        }
+
+        ul {
+            display: none;
+        }
+
+        .hamburger {
+            display: block !important;
+        }
+    }
+
+    .sidebar {
+        display: flex !important;
+        position: absolute;
+        right: 0;
+        background-color: black;
+        height: calc(100vh - 54px);
+        width: 0;
+        transition: 350ms;
+        opacity: 0;
+
+        &.active {
+            width: 447px;
+            transition: 350ms;
+            opacity: 1;
+        }
+
+        .sidebar-logo {
+            position: absolute;
+            bottom: 10px;
+            margin: 40px;
+            display: none;
+            img {
+                width: 100px;
+            }
+        }
+
+        ul {
+            display: none;
+            line-height: 75px;
+            margin-left: 35px;
+        }
+
+        .sidebar-line {
+            width: 20px;
+            height: 1px;
+            background-color: white;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        a {
+            color: white;
+            font-size: 36px;
+            font-weight: 600;
+        }
+    }
+
+    .hero {
+        background-image: url(./2.svg) ;
+        background-repeat: no-repeat;
+        background-size: 153% ;
+        background-position: right 40% center ;
+        height: calc(100vh - 54px);
+
+        h1,h2 {
+            font-size: 104px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .footer {
+        .container{
+            .footer-col-1 {
+                margin-left: 50px;
+            }
+
+            .footer-col-5 {
+                ul {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 568px) {
+
+    .sidebar {
+        display: flex !important;
+        position: absolute;
+        right: 0;
+        background-color: black;
+        height: calc(100vh - 54px);
+        width: 0;
+        transition: 350ms;
+        opacity: 0;
+
+        &.active {
+            width: 100vw;
+            transition: 350ms;
+            opacity: 1;
+        }
+
+        .sidebar-logo {
+            img {
+                width: 80px;
+            }
+        }
+
+        ul {
+            margin-top : 50px;
+        }
+
+        a {
+            font-size: 30px;
+        }
+    }
+
+    .hero {
+        background-image: url(./3.svg);
+        background-position: center top 30%;
+        background-repeat: no-repeat;
+        background-size: 195%;
+        h1,h2 {
+            font-size: 48px;
+        }
+
+        p{
+            font-size: 15px;
+        }
+    }
+}
+
+
+@media screen and (max-width : 567px) {
+    .sidebar {
+        ul {
+            margin-top: 20px;
+            line-height: 50px;
+        }
+
+        .sidebar-logo{
+            margin: auto;
+            left: 30px;
+            bottom: 30px;
+        }
+
+        a {
+            font-size: 25px;
+        }
+    }
+
+    .hero {
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+
